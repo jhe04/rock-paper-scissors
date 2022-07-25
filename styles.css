@@ -238,3 +238,18 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .player {
+    order: 1;
+  }
+
+  .player,
+  .computer {
+    height: 250px;
+  }
+}
