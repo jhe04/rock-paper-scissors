@@ -16,6 +16,11 @@ app.addPlayingListener = function () {
       console.log(app.playing);
     }
   });
+
+  document.querySelector('h1').addEventListener('click', () => {
+    app.playing = !app.playing;
+    console.log(app.playing);
+  });
 };
 
 app.addActionListeners = function () {
